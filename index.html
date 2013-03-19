@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>القارئ الإلكتروني</title>
+<meta charset="UTF-8">
+<meta http-equiv="Refresh" content="0; url=http://alkindle.blogspot.com/?m=1" />
+
+
+
+
+< ------------------- start redirect script here ------------------- >
+
+<script type="text/javascript">
+function DM_redirect(MobileURL, Home){
+try {
+// avoid loops within mobile site
+if(document.getElementById("dmRoot") != null)
+{
+return;
+}
+var CurrentUrl = location.href
+var noredirect = document.location.search;
+if (noredirect.indexOf("no_redirect=true") < 0){
+if ((navigator.userAgent.match(/(iPhone|iPod|BlackBerry|Android|webOS|Windows CE|IEMobile|Opera Mini|Opera Mobi|HTC|LG-|LGE|SAMSUNG|Samsung|SEC-SGH|Symbian|Nokia|PlayStation|PLAYSTATION|Nintendo DSi)/i)) ) {
+
+if(Home){
+top.location.replace(MobileURL);
+}
+else
+{
+top.location.replace(MobileURL + "?url=" + encodeURIComponent(CurrentUrl));
+}
+}
+}
+}
+catch(err){}
+}
+</script><script type='text/javascript'>DM_redirect("http://alkindle.blogspot.com/?m=1");</script>
+
+< ------------------- end redirect script here ------------------- >
+
+</head>
+<body style="background-color#000000;">
+</body>
+</html>
